@@ -8,3 +8,5 @@
 *.dvi
 *.pdf
 _minted
+*.gz
+*.DS_Store
