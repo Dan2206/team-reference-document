@@ -16,9 +16,3 @@ for (int i = 0; i < n; i++) {
         *it = i;
     }
 }
-vector<int> dp(n);
-for (int i = 0; i < n; i++) {
-    if (pr[i] == -1) dp[i] = 1;
-    else dp[i] = dp[pr[i]] + 1;
-}
-cout << *max_element(dp.begin(), dp.end()) << '\n';
